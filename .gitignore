@@ -1,0 +1,17 @@
+# Нууц мэдээлэл: GitHub-д огт оруулахгүй
+.env
+.env.*
+!.env.example
+*accessKeys*.csv
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv-win/
+venv/
+
+# Бусад
+.DS_Store

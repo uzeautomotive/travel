@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    # .env доторх утгуудыг зөвхөн container-д зориулж дарж бичнэ
+    environment:
+      # Frontend ямар ч хаягаас нээгдэж болно
+      ALLOWED_ORIGINS: "*"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
